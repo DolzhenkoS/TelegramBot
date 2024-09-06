@@ -1,6 +1,9 @@
 
+
 function pushButton(){
-alert('Привет');
+//alert('Привет');
+let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+tg.expand(); //расширяем на все окно  
 
 }
 

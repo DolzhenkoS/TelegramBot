@@ -1,4 +1,9 @@
 
+function pushButton(){
+alert('Привет');
+
+}
+
 //let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 
 //tg.expand(); //расширяем на все окно  
@@ -49,9 +54,9 @@
 
 // let usercard = document.getElementById("usercard"); //получаем блок usercard 
 
- let profName = document.createElement('p'); //создаем параграф
- profName.innerText = "PARAGRAPH";
- document.appendChild(profName);
+//  let profName = document.createElement('p'); //создаем параграф
+//  profName.innerText = "PARAGRAPH";
+//  document.appendChild(profName);
 
 // let profName = document.createElement('p'); //создаем параграф
 // profName.innerText = `${tg.initDataUnsafe.user.first_name}

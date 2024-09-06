@@ -49,6 +49,9 @@ tg.expand(); //расширяем на все окно
 
 // let usercard = document.getElementById("usercard"); //получаем блок usercard 
 
+ let profName = document.createElement('p'); //создаем параграф
+ profName.innerText = "PARAGRAPH";
+
 // let profName = document.createElement('p'); //создаем параграф
 // profName.innerText = `${tg.initDataUnsafe.user.first_name}
 // ${tg.initDataUnsafe.user.last_name}

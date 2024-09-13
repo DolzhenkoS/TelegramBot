@@ -1,3 +1,4 @@
+
 let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 tg.expand(); //расширяем на все окно  
 
@@ -17,6 +18,31 @@ function pushButton(){
 	usercard.appendChild(userid); //добавляем
 
 	tg.showAlert("Привет");
+}
+
+function pushButton_test(){
+
+	const url = `http://localhost/roze2025/hs/api/goods/1569651082`;
+
+	//  fetch(url)
+	//  	.then(data => data.json())
+	//  	.then(response => console.log(response));
+
+	 fetch(url)
+	 	.then(data => data.json())
+	 	.then(response => {
+			const html = response.map((item) => `<li>${item.Наименование}</li>`).join('');
+			document.querySelector('ul').innerHTML = html;
+			 		console.log(html);
+		});
+
+		// const html = response.map((item) => `<li>${item}</li>`).join('');
+		// let outputData = document.getElementById("outputData"); 
+		// outputData.innerText = response;
+			
+
+	//	console.log(data);	
+
 }
 
 //let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 

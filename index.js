@@ -24,24 +24,19 @@ function pushButton_test(){
 
 	const url = `http://ratsberry.sytes.net:8080/roze2025/hs/api/goods/1569651082`;
 
+	$.get(url, function (data, status) {
+	 		const html = data.map((item) => `<li>${item.Наименование}</li>`).join('');
+	 		document.querySelector('ul').innerHTML = html;
+});
+
 	//  fetch(url)
 	//  	.then(data => data.json())
-	//  	.then(response => console.log(response));
+	//  	.then(response => {
+	// 		const html = response.map((item) => `<li>${item.Наименование}</li>`).join('');
+	// 		document.querySelector('ul').innerHTML = html;
+	// 		 		console.log(html);
+	// 	});
 
-	 fetch(url)
-	 	.then(data => data.json())
-	 	.then(response => {
-			const html = response.map((item) => `<li>${item.Наименование}</li>`).join('');
-			document.querySelector('ul').innerHTML = html;
-			 		console.log(html);
-		});
-
-		// const html = response.map((item) => `<li>${item}</li>`).join('');
-		// let outputData = document.getElementById("outputData"); 
-		// outputData.innerText = response;
-			
-
-	//	console.log(data);	
 
 }
 

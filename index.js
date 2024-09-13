@@ -16,6 +16,7 @@ function pushButton(){
 	userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
 	usercard.appendChild(userid); //добавляем
 
+	tg.showAlert("Привет");
 }
 
 //let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 

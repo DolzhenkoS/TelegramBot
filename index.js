@@ -22,7 +22,7 @@ function pushButton(){
 
 function pushButton_test(){
 
-	const url = `http://localhost/roze2025/hs/api/goods/1569651082`;
+	const url = `http://ratsberry.sytes.net:8080/roze2025/hs/api/goods/1569651082`;
 
 	//  fetch(url)
 	//  	.then(data => data.json())

@@ -22,7 +22,7 @@ function pushButton(){
 
 function pushButton_test(){
 
-	const url = `https://ratsberry.ddns.net:8443/roze2025/hs/api/goods/3`;
+	const url = `https://ratsberry.sytes.net/api/getGoods.php?id=33456223232`;
 
 	$.get(url, function (data, status) {
 	 		const html = data.map((item) => `<li>${item.Наименование}</li>`).join('');
